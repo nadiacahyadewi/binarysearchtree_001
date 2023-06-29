@@ -39,6 +39,12 @@ public:
 		Node* currentNode = NULL; 
 		search(element, parent, currentNode); // Locate the node will be the parent of the node to be inserted 
 
+		if (parent == NULL) // If the parent is NULL (Tree is empty)
+		{
+			ROOT = newNode; // Mark the new node as ROOT 
+			return; // Exit
+		}
+
 	}
 
 };
